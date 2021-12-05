@@ -1,0 +1,31 @@
+{
+  "name": "web-app-boilerplate",
+  "version": "1.0.0",
+  "description": "React Express Boilerplate",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\"",
+	"client-install": "cd client && npm install",
+    "client-build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snikhil1998/web-app-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snikhil1998/web-app-boilerplate/issues"
+  },
+  "homepage": "https://github.com/snikhil1998/web-app-boilerplate#readme",
+  "dependencies": {
+    "body-parser": "latest",
+    "concurrently": "latest",
+    "cors": "latest",
+    "express": "latest",
+    "nodemon": "latest"
+  }
+}
